@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Contact Us</title>
+<title>About Us</title>
 <script src="js/init.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<h1>Contact Us Here</h1>
-    <form>
-        <label for="contactName">Name:</label>
+	<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Homepage</a>
+  <a href="#">Services</a>
+  <a href="#">Feedback/Contact Us</a>
+  <a href="#">About Us</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+ </div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<h1>About Us</h1>
 <br>
-	<input type="text" id="contactName" name="contactName" required>
-<br>        
-        <label for="contactEmail">Email</label>
-<br> 
-	<input type="email" id="contactEmail" name="contactEmail" required>
-<br>    
-        <label for="contactPhone">Phone Number</label>
-<br>
-	<input type="tel" id="contactPhone" name="contactPhone" required>
-<br>
-        <label for="contactMessage">Message</label>
-<br>
-        <input type="text" id="contactMessage" name="contactMessage" required>
-<br>
-<br>
-      <button type="submit">Submit</button>
-    </form>
+	<p>We are the Arlington Career Center's Cosmetology and this page has info on us</p>
+
+	<p id="map">We are located at the Arlington Career Center</p>
+<div class="map-container">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.1945204119675!2d-77.08844729999998!3d38.864575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b6bb733aa5fd%3A0x5ca406203245405!2sArlington%20Career%20Center!5e0!3m2!1sen!2sus!4v1739465508797!5m2!1sen!2sus" width="1000" height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+</div>
+	<p>816 S Walter Reed Dr, Arlington, VA 22204</p>
 </body>
 </html>
