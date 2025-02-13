@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>Reservations</title>
 		<script scr="js/init.js"></script>
 	</head>
 	<body>
 		<h1>Reserve Your Spot Now</h1>
-			<form action="#" method="POST">
+			<form action="https://httpbin.org/post" method="POST">
                         	<label for="email">Email</label>
-                        	<input type="email" name="email" id="email">
+<br>
+                        	<input type="email" name="email" id="email" required>
 <br>                		
 				<label for="firstname">Name</label>
-                		<input type="text" name="firstname" id="firstname">
+<br>
+                		<input type="text" name="firstname" id="firstname" required>
 <br>
 	                        <label for="phone_number">Phone Number</label>
-	                        <input type="tel" name="phone_number" id="phone_number">
 <br>
-	                        <label for="entertainment">What Service do You Need Done?</label>
-	                        <select id="entertainment" name="entertainment">
-                                <option value="hair">Hair Cut</option>
+	                        <input type="tel" name="phone_number" id="phone_number" required>
+<br>
+	                        <label for="service">What Service do You Need Done?</label>
+<br>
+	                        <select id="service" name="service" required>
+                                <option value="hair_cut">Hair Cut</option>
                                 <option value="nails">Nails</option>
                                  <option value="clown">Clown</option>
                                 <option value="cornhole">Cornhole</option>
@@ -26,6 +30,7 @@
                                 <option value="paint">Face Painting</option>
                                 <option value="Magic">Magician</option>
 				</select>
+<br>
 <br>
 				<input type="submit" name="submit"></input>
 	</body>
