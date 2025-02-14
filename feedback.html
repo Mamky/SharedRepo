@@ -3,9 +3,34 @@
 <head>
 	<title>Spa Feedback</title>
 	<script src="js/init.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
 </head>
 <body>
+        <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#">Homepage</a>
+  <a href="#">Services</a>
+  <a href="#">Feedback/Contact Us</a>
+  <a href="#">About Us</a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>
+ </div>
 <h1>Give Us Some Feedback!</h1>
+<br>
 <form id="ff">
 	<label for="clientName">Client Name (Optional):</label>
 <br>
@@ -34,6 +59,28 @@
 	<button type="submit">Submit</button>
 </form>
 
+<h1>Contact Us Here</h1>
+<br>
+    <form>
+        <label for="contactName">Name:</label>
+<br>
+        <input type="text" id="contactName" name="contactName" required>
+<br>        
+        <label for="contactEmail">Email</label>
+<br> 
+        <input type="email" id="contactEmail" name="contactEmail" required>
+<br>    
+        <label for="contactPhone">Phone Number</label>
+<br>
+        <input type="tel" id="contactPhone" name="contactPhone" required>
+<br>
+        <label for="contactMessage">Message</label>
+<br>
+        <input type="text" id="contactMessage" name="contactMessage" required>
+<br>
+<br>
+      <button type="submit">Submit</button>
+    </form>
 
 
 </body>
