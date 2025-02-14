@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About Us</title>
-<script src="js/init.js"></script>
-<link rel="stylesheet" type="text/css" href="main.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<script src="js/init.js"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+	</script>
 </head>
 <body>
 	<div id="mySidebar" class="sidebar">
@@ -19,17 +30,6 @@
   <button class="openbtn" onclick="openNav()">☰</button>  
  </div>
 
-<script>
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-}
-</script>
 <h1>About Us</h1>
 <br>
 	<p>We are the Arlington Career Center's Cosmetology and this page has info on us</p>
