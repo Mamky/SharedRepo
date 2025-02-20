@@ -20,6 +20,11 @@ function closeNav() {
 <body>
         <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/index.html">Homepage</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/services.html">Services</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/feedback.html">Feedback/Contact Us</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/contactus.html">About Us</a>
+  </div>
   <a href="index.html">Homepage</a>
   <a href="services.html">Services</a>
   <a href="feedback.html">Feedback/Contact Us</a>
@@ -29,22 +34,23 @@ function closeNav() {
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰</button>  
  </div>
-	<h1>Reserve Your Spot Now</h1>
-<br>
-	<form action="https://httpbin.org/post" method="POST">
-        <label for="email">Email</label>
+<div id="grid">
+	<div id="item-1"><h1>Reserve Your Spot Now</h1></div>
+	<div id="item-2"><p>Tell us what service you need in this form.</p></div>
+	<form action="https://httpbin.org/post" method="POST" id="item-3">
+        <label for="email">Email:</label>
 <br>
    	<input type="email" name="email" id="email" required>
 <br>                		
-	<label for="firstname">Name</label>
+	<label for="firstname">Name:</label>
 <br>
 	<input type="text" name="firstname" id="firstname" required>
 <br>
-        <label for="phone_number">Phone Number</label>
+        <label for="phone_number">Phone Number:</label>
 <br>
 	<input type="tel" name="phone_number" id="phone_number" required>
 <br>
-	<label for="service">What Service do You Need Done?</label>
+	<label for="service">Service:</label>
 <br>
 	<select id="service" name="service">
                                 <option value="hair-cut">Hair Cut</option>
@@ -55,6 +61,9 @@ function closeNav() {
 	</select>
 <br>
 <br>
+				<button type="reset">Reset</button>
+				<button type="submit">Submit</button>
+	</form>
 <input type="reset" value="Reset">
 <br>
 <br>

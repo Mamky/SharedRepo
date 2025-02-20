@@ -20,21 +20,29 @@ function closeNav() {
 <body>
         <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="index.html">Homepage</a>
-  <a href="services.html">Services</a>
-  <a href="feedback.html">Feedback/Contact Us</a>
-  <a href="contactus.html">About Us</a>
-</div>
-
+  <a href="https://mamky.github.io/SharedRepo.github.io/index.html">Homepage</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/services.html">Services</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/feedback.html">Feedback/Contact Us</a>
+  <a href="https://mamky.github.io/SharedRepo.github.io/contactus.html">About Us</a>
+  </div>
 <div id="main">
   <button class="openbtn" onclick="openNav()">☰</button>
  </div>
-<h1>Give Us Some Feedback!</h1>
-<br>
-<form id="ff">
+ <div id="grid">
+<div id="item-1"><h1>Give Us Some Feedback or Contact Us!</h1></div>
+<div id="item-2"><p>You can contact us using this form or give us feedback if you want to.</p></div>
+<div id="item-3"><form action="https://httpbin.org/post" method="POST">
 	<label for="clientName">Client Name (Optional):</label>
 <br>
 	<input type="text" id="clientName" name="clientName">
+<br>
+	<label for="contactEmail">Email:</label>
+<br> 
+        <input type="email" id="contactEmail" name="contactEmail" required>
+<br>    
+        <label for="contactPhone">Phone Number:</label>
+<br>
+        <input type="tel" id="contactPhone" name="contactPhone" required>
 <br>
 	<label for="star1">1⭐</label>
         <input type="radio" id="star1" name="rating" value="1" required>
@@ -56,6 +64,11 @@ function closeNav() {
 	<input type="text" id="comments" name="comments" required>
 <br>
 <br>
+	<button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+</form></div>
+</div>
+=======
 <input type="reset" value="Reset">
 <br>
 <br>
