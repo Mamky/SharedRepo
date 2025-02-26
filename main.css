@@ -1,72 +1,8 @@
-<<<<<<< HEAD
-#grid{ display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-height:100vh;
-gap:10px;
-}
-
-#item-1{
-background-color:;
-grid-column:2/5;
-grid-row:1/2;
-}
-
-#item-2{
-grid-column:2/5;
-grid-row:2;
-}
-#item-3{
-grid-column:3;
-grid-row:3/5;
-}
-#item-4{
-grid-column:1;
-grid-row:3/5;
-}
-#item-5{
-grid-column:3/6;
-grid-row:3/5;
-border:10px black solid;
-}
-#map-item{
-background-color: lightcoral;
-grid-column: 2 / 5;
-grid-row: 3 / 6;
-position: relative;
-border: 10px black solid;
-}
-
-#map-item::before{
-content: "";
-display: block;
-padding-top: 56.25%;
-}
-
-#map-item iframe{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
-
-p{
-	border: 10px ridge black;
-	text-align: center;
-}
-h1{
-	text-align: center;
-}
-body {
-  font-family: "Lato", sans-serif;
-=======
 #grid{ display: grid; 
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
 grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
 height:100vh; 
 gap:10px; 
->>>>>>> refs/remotes/origin/main
 }
 
 #item-1{
@@ -89,7 +25,7 @@ background-color: lightcoral;
 grid-column: 2 / 5; 
 grid-row: 3 / 6; 
 position: relative; 
-border: 10px black solid;
+border: 4px black solid;
 } 
 
 #map-item::before{ 
@@ -113,14 +49,14 @@ color: black;
 
 footer{ 
 text-align: center; 
-border: black 10px solid; 
+border: black 4px solid; 
 background-color:white; 
 } 
 
 h1{ 
 text-align: center; 
 background-color: white;  
-border: black solid 10px;
+border: black solid 4px;
 } 
 
 body{ 
@@ -149,6 +85,7 @@ top: 0;
 right: 25px; 
 font-size: 36px; 
 margin-left: 50px; 
+box-shadow: 100px black
 }
 
 .openbtn{ 
